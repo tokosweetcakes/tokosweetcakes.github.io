@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+
+	<style type="text/css">
+		.body{
+			margin: 0;
+			padding: 0;
+			font-family: montserrat;
+			background: linear-gradient(white, lightpink);
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.center{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+			background: white;
+			border-radius: 10px;
+		}
+
+		.center h1{
+			text-align: center;
+			padding: 0 0 20px 0;
+			border-bottom: 1px solid silver;
+		}
+
+		.center form{
+			padding: 0 40px;
+			box-sizing: border-box;
+		}
+
+		form .txt_field{
+			position: relative;
+			border-bottom: 2px solid #cecece;
+			margin: 30px 0;
+		}
+
+		.txt_field input{
+			width: 100px;
+			padding: 0 50 px;
+			height: 40px;
+			font-size: 16px;
+			border: none;
+			background: none;
+			outline: none;
+		}
+
+		.txt_field label{
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			color: #adadad;
+			transform: translateY(-50%);
+			font-size: 16px;
+			pointer-events: none;
+			transition: .5s;
+		}
+
+		.txt_field span::before: {
+			content: '';
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: #cece;
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+	 <div>
+        <a href="home.html">Back to Home</a>
+    </div>
+	<div class="center">
+		<h1>Login</h1>
+		<form method="post">
+			<div class="txt_field">
+				<input type="text" required>
+				<label>Username</label>
+			</div>
+		<form method="post">
+			<div class="txt_field">
+				<input type="text" required>
+				<label>Password</label>
+			</div>
+			<div class="pass">Forget Password?</div>
+			<input type="submit" value="Login">
+			<div class="signup_link">
+				Not a member<a href="#">Signup</a>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
